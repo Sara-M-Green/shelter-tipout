@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tipout Calculator Wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+</head>
+<body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+        <header role="banner">
+            <h1>Tip Out Calculator</h1>
+        </header>
+
+        <section class="total_tips">
+            <h3>Total Credit Card Tips</h3>
+            <form class="cc-tips">
+                <div>
+                    <label for="total-cc-tips">Total Credit Card Tips: $</label>
+                    <input placeholder="0.00" type="number" name="total-cc-tips" id="total-cc-tips">    
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+
+        <section>
+            <h3>Back of House Tip Out</h3>
+            <form class="boh-tips">
+                <div>
+                    <label for="food-sales">Total Food Sales: $</label>
+                    <input placeholder="0.00" type="number" name="food-sales" id="food-sales">    
+                </div>
+                <div>
+                    <label for="boh-tips">BOH Tip Out (3%): $</label>
+                    <input placeholder="0.00" type="number" name="boh-tips" id="boh-tips">    
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+
+        <section>
+            <h3>Bar Prep Tip Out</h3>
+            <form class="prep-tips">
+                <div>
+                    <label for="cocktail-sales">Total Cocktail Sales: $</label>
+                    <input placeholder="0.00" type="number" name="cocktail-sales" id="cocktail-sales">    
+                </div>
+                <div>
+                    <label for="prep-tips">Prep Tip Out (1.5%): $</label>
+                    <input placeholder="0.00" type="number" name="prep-tips" id="prep-tips">    
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+
+        <section>
+            <h3>Busser Tip Out</h3>
+            <form class="busser-tips">
+                <div>
+                    <label for="busser-food-sales">Total Food Sales During Busser Shift: $</label>
+                    <input placeholder="0.00" type="number" name="busser-food-sales" id="busser-food-sales">    
+                </div>
+                <div>
+                    <label for="busser-total-tips">Busser Total Tips (5%): $</label>
+                    <input placeholder="0.00" type="number" name="busser-total-tips" id="busser-total-tips">
+                </div>
+                <div>
+                    <label for="total-busser-hrs">Total Busser Hours:</label>
+                    <input placeholder="0" type="number" name="total-busser-hrs" id="total-busser-hrs">    
+                </div>
+                <div>
+                    <label for="busser-hourly-tips">Buser Tips Per Hour:</label>
+                    <input placeholder="0.00" type="number" name="busser-hourly-tips" id="busser-hourly-tips">    
+                </div>
+                <div>
+                    <label for="busser-name-1">Busser: </label>
+                    <select name="busser-name-1" id="busser-name-1" form="busser-tips">
+                        <option value="">Busser Name:</option>
+                        <option value="Jesus">Jesus</option>
+                        <option value="Estefania">Estefania</option>
+                        <option value="Fernanda">Fernanda</option>
+                    </select>
+
+                    <label for="busser-hours-1">Hours: </label>
+                    <input type=number placeholder="0" for="busser-hours-1" id="busser-hours-1">
+
+                    <label for="busser-tips-1">Tips: </label>
+                    <input type="number" placeholder="0.00" for="busser-tips-1" id="busser-tips-1">
+                </div>
+                <div>
+                    <label for="busser-name-2">Busser: </label>
+                    <select name="busser-name-2" id="busser-name-2" form="busser-tips">
+                        <option value="">Busser Name:</option>
+                        <option value="Jesus">Jesus</option>
+                        <option value="Estefania">Estefania</option>
+                        <option value="Fernanda">Fernanda</option>
+                    </select>
+
+                    <label for="busser-hours-2">Hours: </label>
+                    <input type=number placeholder="0" for="busser-hours-2" id="busser-hours-2">
+
+                    <label for="busser-tips-2">Tips: </label>
+                    <input type="number" placeholder="0.00" for="busser-tips-2" id="busser-tips-2">
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+        
+        <section>
+            <h3>Barback Tip Out</h3>
+            <div>
+                <form class="barback-tips">
+                    <div>
+                        <label for="barback-sales-1">Total Sales During Barback Timeframe</label>
+                        <input type=number placeholder="0.00" name="barback-sales-1" id="barback-sales-1">
+                    </div>
+                    <div>
+                        <label for="barback-name-1">Barback: </label>
+                        <select name="barback-name-1" id="barback-name-1" form="barback-tips">
+                            <option value="">Barback Name:</option>
+                            <option value="Cam">Cam</option>
+                            <option value="Maddy">Maddy</option>
+                            <option value="Jesus">Jesus</option>
+                        </select>
+
+                        <label for="barback-tips-1">Barback Tips (1.5%): $</label>
+                        <input type="number" placeholder="0.00" name="barback-tips-1" id="barback-tips-1">
+
+                        <label for="barback-bottles-1">Bottles Sold: </label>
+                        <input type="number" placeholder="0" name="barback-bottles-1" id="barback-bottles-1">
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Bartender Tip Out</h3>
+            <form>
+                <div>
+                    <label for="total-tip-out">Total Tip Out: $</label>
+                    <input type="number" placeholder="0.00" name="total-tip-out" id="total-tip-out">
+                </div>
+                <div>
+                    <label for="tips-remaining">Tips Remaining for Bartenders: $</label>
+                    <input type="number" placeholder="0.00" name="tips-remaining" id="tips-remaining">
+                </div>
+                <div>
+                    <label for="bartender-hours">Total Bartender Hours: </label>
+                    <input type="number" placeholder="0" name="bartender-hours" id="bartender-hours">
+                </div>
+                <div>
+                    <label for="bartender-hourly-tips">Bartender Tips Per Hour: </label>
+                    <input type="number" placeholder="0.00" name="bartender-hourly-tips" id="bartender-hourly-tips">
+                </div>
+                <div>
+                    <label for="bartender-name-1">Bartender: </label>
+                    <select name="bartender-name-1" id="bartender-name-1" form="bartender-tips">
+                        <option value="">Bartender Name:</option>
+                        <option value="Tucker">Tucker</option>
+                        <option value="Sara">Sara</option>
+                        <option value="Steph">Steph</option>
+                    </select>
+
+                    <label for="bartender-hours-1">Hours: </label>
+                    <input type=number placeholder="0" for="bartender-hours-1" id="bartender-hours-1">
+
+                    <label for="bartender-tips-1">Tips: </label>
+                    <input type="number" placeholder="0.00" for="bartender-tips-1" id="bartender-tips-1">
+
+                    <label for="bartender-bottles-1">Bottles Sold: </label>
+                    <input type="number" placeholder="0" name="bartender-bottles-1" id="bartender-bottles-1">
+                </div>
+                <div>
+                    <label for="bartender-name-2">Bartender: </label>
+                    <select name="bartender-name-2" id="bartender-name-2" form="bartender-tips">
+                        <option value="">Bartender Name:</option>
+                        <option value="Tucker">Tucker</option>
+                        <option value="Sara">Sara</option>
+                        <option value="Steph">Steph</option>
+                    </select>
+
+                    <label for="bartender-hours-2">Hours: </label>
+                    <input type=number placeholder="0" for="bartender-hours-2" id="bartender-hours-2">
+
+                    <label for="bartender-tips-2">Tips: </label>
+                    <input type="number" placeholder="0.00" for="bartender-tips-2" id="bartender-tips-2">
+
+                    <label for="bartender-bottles-2">Bottles Sold: </label>
+                    <input type="number" placeholder="0" name="bartender-bottles-2" id="bartender-bottles-2">
+                </div>
+                <div>
+                    <label for="bartender-name-3">Bartender: </label>
+                    <select name="bartender-name-3" id="bartender-name-3" form="bartender-tips">
+                        <option value="">Bartender Name:</option>
+                        <option value="Tucker">Tucker</option>
+                        <option value="Sara">Sara</option>
+                        <option value="Steph">Steph</option>
+                    </select>
+
+                    <label for="bartender-hours-3">Hours: </label>
+                    <input type=number placeholder="0" for="bartender-hours-3" id="bartender-hours-3">
+
+                    <label for="bartender-tips-3">Tips: </label>
+                    <input type="number" placeholder="0.00" for="bartender-tips-3" id="bartender-tips-3">
+
+                    <label for="bartender-bottles-3">Bottles Sold: </label>
+                    <input type="number" placeholder="0" name="bartender-bottles-3" id="bartender-bottles-3">
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+    <footer role="content-info">Footer</footer>
+</body>
+</html>
